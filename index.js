@@ -1,3 +1,5 @@
+"use strict";
+
 /* Если переменная a равна нулю, то выведите 'Верно', иначе выведите 'Неверно'.
 Проверьте работу скрипта при a, равном 1, 0, -3.*/
 function zero(a) {
@@ -106,4 +108,72 @@ function onlyStringNumber(a) {
 console.log(onlyStringNumber("1"));
 console.log(onlyStringNumber(3));
 console.log(onlyStringNumber(1));
+
+/*Если переменная a больше нуля и меньше 5-ти, то выведите 'Верно', иначе выведите 'Неверно'.
+Проверьте работу скрипта при a, равном 5, 0, -3, 2.
+*/
+
+function twoConditions(a) {
+    if (a > 0 && a < 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(twoConditions(5));
+console.log(twoConditions(0));
+console.log(twoConditions(-3));
+console.log(twoConditions(2));
+
+
+/*
+Если переменная a равна нулю или равна двум, то прибавьте к ней 7, иначе поделите ее на 10.
+Выведите новое значение переменной на экран. Проверьте работу скрипта при a, равном 5, 0, -3, 2.
+*/
+
+function oneOfTheConditions(a) {
+    if (a === 0 || a === 2) {
+        return (a += 7);
+    } else {
+        return (a /= 10);
+    }
+}
+console.log(oneOfTheConditions(5));
+console.log(oneOfTheConditions(0));
+console.log(oneOfTheConditions(-3));
+console.log(oneOfTheConditions(2));
+
+/*
+Если переменная a равна или меньше 1, а переменная b больше или равна 3, то выведите сумму этих переменных,
+иначе выведите их разность (результат вычитания). Проверьте работу скрипта при a и b,
+равном 1 и 3, 0 и 6, 3 и 5.
+*/
+
+function twoVariablesAnd(a, b) {
+    if (a <= 1 && b >= 3) {
+        return a + b;
+    } else {
+        return a - b;
+    }
+}
+console.log(twoVariablesAnd(1, 3));
+console.log(twoVariablesAnd(0, 6));
+console.log(twoVariablesAnd(3, 5));
+
+/*
+Если переменная a больше 2-х и меньше 11-ти, или переменная b больше или равна 6-ти и меньше 14-ти,
+то выведите 'Верно', в противном случае выведите 'Неверно'.
+*/
+
+function twoVariablesOr(a, b) {
+    if ((a > 2 && a < 11) || (b >= 6 && b < 14)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(twoVariablesOr(1, 3));
+console.log(twoVariablesOr(0, 6));
+console.log(twoVariablesOr(3, 5));
+
 
