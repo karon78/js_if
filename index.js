@@ -369,6 +369,40 @@ function sumString(string) {
 sumString('125843');
 sumString('194284');
 
+//--------------------------------------------
+/**
+ *  Если переменная test равна true, то выведите 'Верно', иначе выведите 'Неверно'.
+ *  Проверьте работу скрипта при test, равном true, false.
+ *  Напишите два варианта скрипта - с короткой записью и с длинной.
+ *  */
+
+function getTrue(test) {
+    if (test === true){
+        return console.log('Верно');
+    } else{
+        return console.log('Неверно');
+    }
+}
+
+getTrue(true);
+getTrue(false);
+
+/**
+ * Если переменная test не равна true, то выведите 'Верно', иначе выведите 'Неверно'.
+ * Проверьте работу скрипта при test, равном true, false.
+ * Напишите два варианта скрипта - с короткой записью и с длинной.
+ * */
+
+function getFalse(test) {
+    if (test !== true){
+        return console.log('Верно');
+    } else{
+        return console.log('Неверно');
+    }
+}
+
+getFalse(true);
+getFalse(false);
 
 
 
